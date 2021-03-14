@@ -48,6 +48,8 @@ exec swayidle -w \
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
+## get input device identifiers with
+## swaymsg -t get_inputs | less
 #
 # Example configuration:
 #
