@@ -66,6 +66,7 @@ exec swayidle -w \
 
   input type:keyboard {
     xkb_layout "us"
+    xkb_variant "altgr-intl"
     xkb_options "altwin:left_meta_win"
   }
 #
