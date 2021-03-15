@@ -70,6 +70,7 @@ exec swayidle -w \
     xkb_layout "us"
     xkb_variant "mac"
     xkb_numlock enabled
+    xkb_options "altwin:swap_lalt_lwin"
   }
 
   input "1:1:AT_Translated_Set_2_keyboard" {
