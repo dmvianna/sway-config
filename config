@@ -68,7 +68,7 @@ exec swayidle -w \
 
   input "1452:544:Apple,_Inc_Apple_Keyboard" {
     xkb_layout "us"
-    xkb_variant "mac"
+    xkb_variant "altgr-intl"
     xkb_numlock enabled
     xkb_options "altwin:swap_lalt_lwin"
   }
