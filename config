@@ -123,6 +123,8 @@ bindsym $mod+c exec swaylock -f -c 000000
     # Move your focus around
     bindsym $mod+tab focus right
     bindsym $mod+Shift+tab focus left
+
+    # move with defined keys
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
@@ -193,7 +195,7 @@ bindsym $mod+c exec swaylock -f -c 000000
     bindsym $mod+button1 floating enable
 
     # Swap focus between the tiling area and the floating area
-    # bindsym $mod+Shift+space focus mode_toggle
+    bindsym $mod+Shift+a focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -201,7 +203,7 @@ bindsym $mod+c exec swaylock -f -c 000000
 # Scratchpad:
 #
     # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
+    # you can send windows there and get them back later.
 
     # Move the currently focused window to the scratchpad
     bindsym $mod+Shift+minus move scratchpad
@@ -212,6 +214,7 @@ bindsym $mod+c exec swaylock -f -c 000000
 #
 # Resizing containers:
 #
+# mod+r enter resize mode
 mode "resize" {
     # left will shrink the containers width
     # right will grow the containers width
