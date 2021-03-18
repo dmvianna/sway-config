@@ -252,19 +252,35 @@ bindsym XF86AudioPrev exec playerctl previous
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
+# bar {
+#     position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while ~/.config/sway/status.bash; do sleep 1; done
+    # status_command while ~/.config/sway/status.bash; do sleep 1; done
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-  font pango:Inconsolata Regular 14
-}
+  #   colors {
+  #       statusline #ffffff
+  #       background #323232
+  #       inactive_workspace #32323200 #32323200 #5c5c5c
+  #   }
+  # font pango:Inconsolata Regular 14
+# }
+
+## misc stuff
+
+# independently control waybar
+exec ~/.config/sway/launch-waybar
+
+# profile manager
+exec kanshi
+
+#popup fullscreen
+popup_during_fullscreen smart
+
+# notification daemon
+exec mako
+exec gammastep-indicator
+exec nm-applet --indicator
 
 include @sysconfdir@/sway/config.d/*
