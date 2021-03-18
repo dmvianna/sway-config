@@ -282,5 +282,6 @@ popup_during_fullscreen smart
 exec mako
 exec gammastep-indicator
 exec nm-applet --indicator
+exec blueman-applet
 
 include @sysconfdir@/sway/config.d/*
