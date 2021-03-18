@@ -63,7 +63,14 @@ bindsym $mod+c exec swaylock -f -c 000000
     xkb_variant "altgr-intl"
   }
 
-  input "1739:0:Synaptics_TM3289-021" {
+  input type:pointer {
+    dwt enabled  # disable while typing
+    tap enabled
+    natural_scroll disabled
+    accel_profile adaptive
+  }
+
+  input type:touchpad {
       dwt enabled  # disable while typing
       tap enabled
       natural_scroll enabled
@@ -71,8 +78,6 @@ bindsym $mod+c exec swaylock -f -c 000000
   }
 
   input "2:10:TPPS/2_Elan_TrackPoint" {
-    accel_profile adaptive
-    dwt enabled  # disable while typing
     pointer_accel 1
   }
 
@@ -86,15 +91,18 @@ bindsym $mod+c exec swaylock -f -c 000000
   }
 
   input "76:617:Magic_Mouse_2_Mouse" {
-    dwt enabled
-    tap enabled
-    natural_scroll enabled
     middle_emulation enabled
+    natural_scroll enabled
   }
 
   input "6127:24717:PixArt_Lenovo_USB_Optical_Mouse" {
-    dwt enabled
     scroll_factor 10
+    natural_scroll disabled
+  }
+
+  input "1452:781:Daniel_M_Vianna___s_Mouse" {
+    middle_emulation enabled
+    natural_scroll enabled
   }
 
 #
