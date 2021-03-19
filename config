@@ -290,8 +290,10 @@ bindsym XF86AudioPrev exec playerctl previous
 
 ## misc stuff
 
-# bar { swaybar_command waybar }
-exec ~/.config/sway/launch-waybar
+bar {
+    swaybar_command waybar
+    font pango:Inconsolata Regular 15
+  }
 
 # profile manager
 exec kanshi
