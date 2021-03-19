@@ -290,11 +290,6 @@ bindsym XF86AudioPrev exec playerctl previous
 
 ## misc stuff
 
-bar {
-    swaybar_command waybar
-    font pango:Inconsolata Regular 15
-  }
-
 # profile manager
 exec kanshi
 
@@ -306,5 +301,6 @@ exec mako
 exec gammastep-indicator
 exec nm-applet --indicator
 exec blueman-applet
+exec ~/.config/sway/lauch-waybar
 
 include @sysconfdir@/sway/config.d/*
