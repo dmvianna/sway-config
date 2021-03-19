@@ -301,6 +301,6 @@ exec mako
 exec gammastep-indicator
 exec nm-applet --indicator
 exec blueman-applet
-exec ~/.config/sway/lauch-waybar
+exec waybar
 
 include @sysconfdir@/sway/config.d/*
