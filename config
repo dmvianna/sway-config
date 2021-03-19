@@ -290,7 +290,8 @@ bindsym XF86AudioPrev exec playerctl previous
 
 ## misc stuff
 
-bar { swaybar_command waybar }
+# bar { swaybar_command waybar }
+exec ~/.config/sway/launch-waybar
 
 # profile manager
 exec kanshi
