@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu-wl | xargs swaymsg exec --
+set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 font pango:Inconsolata Regular 11
 
@@ -37,11 +37,11 @@ output * bg ~/.config/dotfiles/nix-wallpaper-simple-dark-gray.png fill
 #
 # Example configuration:
 #
-exec swayidle -w \
-         timeout 600 'swaylock -f -c 000000' \
-         timeout 900 'swaymsg "output * dpms off"' \
-              resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000'
+# exec swayidle -w \
+#          timeout 600 'swaylock -f -c 000000' \
+#          timeout 900 'swaymsg "output * dpms off"' \
+#               resume 'swaymsg "output * dpms on"' \
+#          before-sleep 'swaylock -f -c 000000'
 
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -304,7 +304,7 @@ popup_during_fullscreen smart
 
 # notification daemon
 exec mako
-exec gammastep-indicator
+# exec gammastep-indicator
 exec nm-applet --indicator
 exec blueman-applet
 exec waybar
