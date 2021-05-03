@@ -63,6 +63,14 @@ bindsym $mod+c exec swaylock -f -c 000000
     xkb_variant "altgr-intl"
   }
 
+  input "AT Translated Set 2 keyboard" {
+    xkb_options "altwin:alt_super_win"
+  }
+
+  input "Apple Keyboard" {
+    xkb_options "altwin:swap_alt_win,numpad:mac"
+  }
+
   input type:pointer {
     dwt enabled  # disable while typing
     tap enabled
