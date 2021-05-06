@@ -300,7 +300,7 @@ bindsym $mod+Print exec slurp | grim -g - - | xclip -i -selection c -t image/png
 ## misc stuff
 
 # profile manager
-exec kanshi
+exec_always kanshi
 
 #popup fullscreen
 popup_during_fullscreen smart
