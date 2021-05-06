@@ -67,10 +67,6 @@ bindsym $mod+c exec swaylock -f -c 000000
     xkb_options "altwin:alt_super_win"
   }
 
-  input "Apple Keyboard" {
-    xkb_options "altwin:swap_alt_win,numpad:mac"
-  }
-
   input type:pointer {
     dwt enabled  # disable while typing
     tap enabled
@@ -91,7 +87,7 @@ bindsym $mod+c exec swaylock -f -c 000000
 
   input "1452:544:Apple,_Inc_Apple_Keyboard" {
     xkb_numlock enabled
-    xkb_options "altwin:swap_lalt_lwin"
+    xkb_options "altwin:swap_alt_win"
   }
 
   input "76:617:Magic_Mouse_2_Mouse" {
