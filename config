@@ -277,7 +277,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Take a screenshot with all output and save it into screenshots
 # bindsym Print exec grim ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png
 # Take a Screenshot with the region select
-bindsym $mod+Print exec slurp | grim -g - - | xclip -i -selection c -t image/png
+bindsym $mod+Home exec slurp | grim -g - - | xclip -i -selection c -t image/png
 
 #
 # Status Bar:
