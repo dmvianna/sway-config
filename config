@@ -95,6 +95,11 @@ bindsym $mod+c exec swaylock -f -c 000000
     natural_scroll enabled
   }
 
+  input "1133:45091:Logitech_Wireless_Mouse_MX_Master_3" {
+    middle_emulation disabled
+    scroll_factor 5
+  }
+
   input "6127:24717:PixArt_Lenovo_USB_Optical_Mouse" {
     scroll_factor 10
     natural_scroll disabled
